@@ -229,3 +229,28 @@ body{
   }
 
 }
+@media (max-width: 768px) {
+
+  .container{
+    width:100%;
+    padding:1rem;
+  }
+
+  .hero-content{
+    display:block;
+    width:100%;
+  }
+
+  .hero-brand{
+    align-items:center;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .timeline{
+    grid-template-columns:1fr;
+  }
+
+}
