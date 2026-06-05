@@ -1,0 +1,8 @@
+public/
+└── pic/
+    └── stadsvriend-logo.png
+    <img src="/pic/stadsvriend-logo.png" alt="Stadsvriend logo" />
+    ---
+import logo from "../pic/stadsvriend-logo.png";
+---<img src={logo.src} alt="Stadsvriend logo" />
+
