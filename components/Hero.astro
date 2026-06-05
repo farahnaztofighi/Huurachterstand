@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import myImage from './../logo.png';
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <Image
+      src={myImage}
+      loading="lazy"
+      alt="logo"
+      class="hero-logo"
+    />
+  </div>
+</section>
+
+    <h1>
+      Maakt u zich zorgen over uw huur?
+    </h1>
+
+    <p class="hero-intro">
+      Kunt u de huur niet op tijd betalen of maakt u zich zorgen over uw financiële situatie? Neem op tijd actie. Vaak zijn er nog mogelijkheden om samen naar een oplossing te zoeken.
+    </p>
+
+    <p class="hero-description">
+      Op deze website vindt u duidelijke uitleg, praktische hulp,
+      informatie over uw rechten als huurder en organisaties die u
+      verder kunnen helpen.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="/hulp" class="btn">
+        Bekijk uw mogelijkheden
+      </a>
+
+      <a href="/rechten" class="btn-secondary">
+        Lees uw rechten
+      </a>
+
+    </div>
+
+  </div>
+
+</section>

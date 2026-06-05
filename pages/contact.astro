@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+
+<section class="container">
+
+  <h1>Belangrijke organisaties</h1>
+
+  <p>
+    Hieronder vindt u organisaties die u kunnen helpen bij
+    huurachterstanden en financiële problemen.
+  </p>
+
+  <div class="cards">
+
+    <a
+      href="https://www.rijksoverheid.nl/vraag-en-antwoord/schulden/schuldhulpverlening-aanvragen"
+      target="_blank"
+      class="card-link"
+    >
+      <article>
+        <h3>Schuldhulpverlening</h3>
+      </article>
+    </a>
+
+    <a
+      href="https://budgetcoach.nl/"
+      target="_blank"
+      class="card-link"
+    >
+      <article>
+        <h3>Budgetcoach</h3>
+      </article>
+    </a>
+
+    <a
+      href="https://www.belastingdienst.nl/wps/wcm/connect/nl/huurtoeslag/huurtoeslag"
+      target="_blank"
+      class="card-link"
+    >
+      <article>
+        <h3>Huurtoeslag</h3>
+      </article>
+    </a>
+
+    <a
+      href="https://www.juridischloket.nl/"
+      target="_blank"
+      class="card-link"
+    >
+      <article>
+        <h3>Juridisch Loket</h3>
+      </article>
+    </a>
+
+  </div>
+
+  <section class="form-section">
+    <h2>Stel uw vraag</h2>
+    <p>Heeft u een vraag? Neem contact met ons op via het formulier hieronder.</p>
+    
+    <form class="contact-form" method="POST">
+      <div class="form-group">
+        <label for="name">Naam *</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          required 
+          placeholder="Uw volledige naam"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mailadres *</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          placeholder="uw.email@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="question">Uw vraag *</label>
+        <textarea 
+          id="question" 
+          name="question" 
+          required 
+          placeholder="Stel hier uw vraag..."
+          rows="6"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Verzend vraag</button>
+    </form>
+  </section>
+
+</section>
+
+</BaseLayout>
+
+<style>
+  .form-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .form-section h2 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  }
+
+  .btn-submit {
+    padding: 0.75rem 1.5rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+  }
+
+  .btn-submit:hover {
+    background-color: #0052a3;
+  }
+</style>
