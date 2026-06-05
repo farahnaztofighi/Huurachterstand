@@ -1,16 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import myImage from './../logo.png';
+import myImage from '../logo.png';
 ---
-<nav class="navbar">
 
- 
-    
-  </div>
-</section>
+<nav class="navbar">
+  <a href="/" class="brand">
+    <img src={myImage.src} alt="Stadsvriend logo" />
+    <span>Stadsvriend</span>
+  </a>
 
   <ul>
-   <strong> <li><span>Stadsvriend</span></li></strong>
     <li><a href="/">Home</a></li>
     <li><a href="/huurachterstand">Huurachterstand</a></li>
     <li><a href="/hulp">Hulp</a></li>
@@ -18,5 +16,4 @@ import myImage from './../logo.png';
     <li><a href="/faq">FAQ</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
-
 </nav>
